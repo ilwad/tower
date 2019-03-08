@@ -1,5 +1,5 @@
 [all:vars]
-ansible_user=sfathi
+ansible_user=fathi
 ansible_ssh_pass=mohamed
 ansible_port=22
 
