@@ -43,5 +43,4 @@
     - name: restart-apache-service
       service:
         name: httpd
-        state: started
-        enabled: yes
+        state: restarted
