@@ -24,13 +24,13 @@
 
     - name: Ensure latest httpd.conf is present
       template:
-        src: /root/templates/httpd.conf.j2
+        src: /var/lib/awx/templates/httpd.conf.j2
         dest: /etc/httpd/conf/httpd.conf
       notify: restart-apache-service
 
     - name: Ensure latest index.html is present
       template:
-        src: /root/templates/index.html.j2
+        src: /var/lib/awx/templates/index.html.j2
         dest: /var/www/html/index.html
 
     - name: Ensure httpd is started and enabled
