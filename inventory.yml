@@ -1,12 +1,12 @@
 [all:vars]
-  ansible_user=sfathi
-  ansible_ssh_pass=mohamed
-  ansible_port=22
+ansible_user=sfathi
+ansible_ssh_pass=mohamed
+ansible_port=22
 
-  [web]
-  node1 ansible_host=192.168.0.7
-  node2 ansible_host=<192.168.0.9
-  node3 ansible_host=192.168.0.1o
+[web]
+node1 ansible_host=192.168.0.7
+node2 ansible_host=<192.168.0.9
+node3 ansible_host=192.168.0.1o
 
-  [control]
-  ansible ansible_host=192.168.0.8
+[control]
+ansible ansible_host=192.168.0.8
