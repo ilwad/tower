@@ -37,8 +37,8 @@
     - name: Ensure httpd is started and enabled
       service:
         name: httpd
-        state: started
         enabled: yes
+        state: started
 
   handlers:
     - name: restart-apache-service
