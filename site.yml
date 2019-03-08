@@ -34,12 +34,6 @@
         src: templates/index.html.j2
         dest: /var/www/html/index.html
 
-    - name: Ensure httpd is started and enabled
-      service:
-        name: httpd
-        enabled: yes
-        state: started
-
   handlers:
     - name: restart-apache-service
       service:
