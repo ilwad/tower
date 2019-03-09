@@ -33,6 +33,12 @@
       template:
         src: templates/index.html.j2
         dest: /var/www/html/index.html
+        
+    - name: httpd is started and enabled
+      service:
+        name: httpd
+        enabled: yes
+      notify: restart apache
 
   handlers:
     - name: restart-apache-service
